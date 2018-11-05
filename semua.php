@@ -255,6 +255,15 @@ for($i=0;$i<$d;$i++){
 print_r($V1);
 print_r($V2);
 print_r($V3);
+$B1=[];
+$B2=[];
+$B3=[];
+$B1[] = ((1*$Cuit)/(1+pow(exp(1),$Ruit)))  + ((1*$Cuij)/(1+pow(exp(1),$Ruij))) - (0.01*$B[$itemAcakP]);
+$B2[] = ((1*$Cuit)/(1+pow(exp(1),$Ruit)))*(-1)  + ((1*$Cutj)/(1+pow(exp(1),$Rutj))) - (0.01*$B[$itemAcakP]);
+$B3[] = ((1*$Cutj)/(1+pow(exp(1),$Rutj)))*(-1)  + ((1*$Cuij)/(1+pow(exp(1),$Ruij)))*(-1) - (0.01*$B[$itemAcakP]);
+print_r($B1);
+print_r($B2);
+print_r($B3);
 //mencari b
 // $W1[] = (((1*$Cuit)/(1+pow(exp(1),$Ruit)))*($Vt[$itemAcakP][1]-$Vt[$itemAcakC][1])) + (((1*$Cutj)/(1+pow(exp(1),$Rutj)))*($Vt[$itemAcakC][1]-$Vt[$itemAcakL][1])) + (((1*$Cuij)/(1+pow(exp(1),$Ruij)))*($Vt[$itemAcakP][1]-$Vt[$itemAcakL][1])) - (0.01*$W[$userAcak][1]);
 // echo round($Sui,3);
